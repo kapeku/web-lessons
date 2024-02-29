@@ -19,3 +19,7 @@ figcaption {
 figure{
     float: right;
 }
+#Houstonimg{
+    position: relative;
+    top: -65px;
+}
