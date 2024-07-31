@@ -1,0 +1,19 @@
+.header{
+    width: 1219px;
+	background: #007765;
+	height: 84px;
+}
+.logo{
+    width: 184px;
+    height: 45px;
+    left: 55px;
+    top: 20px;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+
