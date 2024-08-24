@@ -5,10 +5,13 @@ html{
   padding:0;
   margin:0;
 }
+.wrapper{
+  max-width: 1219px;
+  padding: 55px;
+}
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 header{
   width: 100%;
-  height: 100vh;
 }
 .top-menu {
   display: flex;
@@ -88,4 +91,65 @@ header{
 }
 @media (max-width: 600px) {
 .menu-main li {display: block;}
+}
+.hero {
+  margin:0;
+  background-image: url('img/image.png');
+  background-size: cover;
+  background-position: center center;
+  padding-top:160px;
+  padding-bottom: 160px;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  text-align:center
+}
+.PiperNet span{
+  font-family: Roboto;
+  font-size: 72px;
+  line-height: 84.38px;
+  color:#fff;
+}
+.text-desc p{
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 37.5px;
+  color:black;
+}
+.text-desc p:not(:last-child){
+  margin-bottom: 1.5em;
+}
+.description{
+  margin:auto;
+}
+.description h1{
+  font-family: Roboto;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color:#007765;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-desc{
+  max-width:1100px ;
+  max-height: 488px;
+  margin:0;
+  margin-top:16px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  box-sizing: border-box;
+}
+.problem{
+  box-sizing: border-box;
+  margin:auto;
+  padding-top: 48px;
+  padding-bottom: 92px;
+  background-color: #EEEEEE;
 }
