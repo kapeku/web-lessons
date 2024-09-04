@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html{
   box-sizing: border-box;
 }
@@ -12,6 +13,7 @@ html{
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 header{
   width: 100%;
+  position: fixed;
 }
 .top-menu {
   display: flex;
@@ -20,8 +22,9 @@ header{
   padding: 20px;
   justify-content: space-evenly ;
   align-items: center;
+  height: 45px;
 }
-.navbar-logo {display: inline-block; margin-top: 10px;}
+.navbar-logo {display: inline-block; margin-top: 5px;}
 .navbar-logo:before {
   content: "";
   width: 9px;
@@ -34,6 +37,11 @@ header{
   transition: .3s linear;
 }
 .navbar-logo:hover:before {opacity: 1;}
+.menu_list{
+  font-family: Roboto;
+font-size: 24px;
+line-height: 28.13px;
+}
 .menu-main {
   list-style: none;
   margin: 0;
@@ -92,13 +100,14 @@ header{
 @media (max-width: 600px) {
 .menu-main li {display: block;}
 }
-.hero {
+.hero1 {
   margin:0;
   background-image: url('img/image.png');
   background-size: cover;
   background-position: center center;
   padding-top:160px;
   padding-bottom: 160px;
+  max-height: 403px;
 }
 .container {
   box-sizing: border-box;
@@ -107,12 +116,14 @@ header{
   margin-right: auto;
   padding-left: 55px;
   padding-right: 55px;
-  text-align:center
+  text-align:center;
+  
 }
-.PiperNet span{
-  font-family: Roboto;
+.PiperNet h1{
+  font-style: normal;
+  font-weight: 500;
   font-size: 72px;
-  line-height: 84.38px;
+  line-height: 84px;
   color:#fff;
 }
 .text-desc p{
@@ -125,22 +136,28 @@ header{
   margin-bottom: 1.5em;
 }
 .description{
-  margin:auto;
+  display: flex;
+  flex-direction: column;
+  margin:0;
 }
 .description h1{
+  justify-content: center;
+  align-self: flex-start;
   font-family: Roboto;
   font-size: 64px;
   line-height: 75px;
   text-align: center;
   color:#007765;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
 .text-desc{
+  justify-self: center;
+  align-self: center;
   max-width:1100px ;
   max-height: 488px;
   margin:0;
-  margin-top:16px;
   margin-left:auto;
   margin-right:auto;
   padding:0;
@@ -152,4 +169,106 @@ header{
   padding-top: 48px;
   padding-bottom: 92px;
   background-color: #EEEEEE;
+}
+.hero__message {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
+.hero2 {
+  margin:0;
+  background-image: url('img/image2.png');
+  background-size: cover;
+  background-position: center center;
+  padding-top:160px;
+  padding-bottom: 160px;
+  max-height: 483px;
+}
+.Introduction h1{
+  justify-content: center;
+  align-self: flex-start;
+  font-family: Roboto;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color:#007765;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+}
+.logo_PPC{
+  float:left;
+  padding-right:48px;
+}
+.first_p span{
+  font-family: Roboto;
+font-size: 32px;
+font-style: italic;
+line-height: 37.5px;
+text-align: left;
+}
+.Introduction .text-desc{
+  padding-bottom: 92px;
+}
+.team{
+  box-sizing: border-box;
+  margin:auto;
+  padding-top: 48px;
+  padding-bottom: 92px;
+  background-color: #EEEEEE;
+}
+.team h1{
+  justify-content: center;
+  align-self: flex-start;
+  font-family: Roboto;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color:#007765;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 58px;
+}
+.personals{
+  display: flex;
+  flex-direction:row ;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 32px;
+  padding: 0;
+  gap: 30px 30px;
+}
+.personal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px 50px;
+}
+.name{
+  font-family: Roboto;
+font-size: 24px;
+line-height: 28.13px;
+text-align: left;
+color: #007765;
+font-weight: bold;
+}
+.icon-text{
+  font-family: Roboto;
+font-size: 18px;
+font-style: italic;
+line-height: 21.09px;
+text-align: left;
+
+}
+.empty{
+  width: 100%;
 }
