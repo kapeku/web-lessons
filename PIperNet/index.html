@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' media='screen and (max-width: 600px)' href='mobile.css' />
     <title>PiperNet</title>
 </head>
 <body>
     <wrapper>
         <header>
             <nav class="top-menu">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                </div>  
                 <a class="navbar-logo" href="#top"><img src="img/logo.svg"></a>
                 <ul class="menu-main">
-                    <li class="menu_list"><a href="">the problem</a></li>
-                    <li class="menu_list"><a href="">PiedPiperCoin</a></li>
-                    <li><a href="">the team</a></li>
+                    <li class="menu_list"><a href="#TheProblem">the problem</a></li>
+                    <li class="menu_list"><a href="#PiedPiperCoin">PiedPiperCoin</a></li>
+                    <li><a href="#TheTeam">the team</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="hero1">
+        <div class="hero1">
             <div class="container PiperNet">
                 <h1 class="heading">PiperNet Is Here</h1>
             </div>
-        </section>
-        <section class="problem" id="TheProblem">
+        </div>
+        <div class="problem" id="TheProblem">
             <div class="description">
                 <h1 class="heading">The Problem</h1>
                 <div class="text-desc">
@@ -37,15 +44,15 @@
                     <p>Put even simpler — <strong>it’s the internet, completely decentralized.</strong></p>
                 </div>
             </div>
-        </section>
-        <section class="hero2" >
+        </div>
+        <div class="hero2" >
             <div class="container">
                 <div class="hero__message">
                     We’re in this together! All of our computers and phones join in a network to make the strongest supercomputer the world has ever seen.
                 </div>
             </div>
-        </section>
-        <section class="Introduction">
+        </div>
+        <div class="Introduction" id="PiedPiperCoin">
                 <h1 class="heading">Introducing PiedPiperCoin</h1>
                 <div class="text-desc">
                     <img class="logo_PPC" src="img/PPC_Logo.svg">
@@ -57,8 +64,8 @@
                     <p>Whether you're a developer with an app ready for market, or just an Average Joe with a smartphone you'll love all you can do with PiedPiperCoin.
                     </p>
                 </div>
-        </section>
-        <section class="team">
+        </div>
+        <div class="team" id="TheTeam">
                 <h1 class="heading">The Team</h1>
                 <div class="personals">
                 
@@ -105,7 +112,7 @@
                         <p class="icon-text">Majority Investor</p>
                     </div>
                 </div>
-        </section>
+        </div>
         <footer>
             <div class="footer">
                 <p>All other trademarks and copyrights are the property of their respective owners. Use of these names, trademarks and brands does not imply endorsement.</p>
