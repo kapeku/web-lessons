@@ -290,12 +290,130 @@ max-height: 64px;
 #menu-toggle{
   display: none;
 }
-.checkbox{
-  display: none;
-}
-.hamburger-lines{
+.menu-button-container{
   display: none;
 }
 #TheProblem, #TheTeam, #PiedPiperCoin{
   scroll-margin-top: 50px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width:700px) {
+  
+.text-desc p{
+  font-size: 20px;
+  padding: 0 15px;
+}
+.text-desc span{
+  font-size: 20px;
+}
+
+.problem{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  height: 900px;
+}
+.hero2 {
+  padding-top:160px;
+  padding-bottom: 160px;
+  max-height: 483px;
+}
+.hero__message{
+  font-size:30px;
+}
+.container{
+  padding: 0;
+}
+.Introduction{
+  height:800px;
+  padding-bottom: 20px;
+}
+.Introduction h1{
+  padding:10px;
+}
+.Introduction .text-desc{
+  padding: 10px;
+}
+section .heading{
+  font-size: 45px;
+}
+.team{
+  padding-top: 10px;
+}
+.team h1{
+  padding:0;
+}
+.logo_PPC{
+  width: 80px;
+  height: auto;
+  padding:10px;
+  margin:0;
+}
+.personal img{
+  width:140px;
+  height:140px;
+}
+.personal .name{
+  font-size: 20px;
+}
+.personal .icon-text{
+  font-size: 15px;
+}
+.personals{
+  width: auto;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap:15px;
+  padding-bottom: 10px;
+}
+.personal{
+  max-width: 200px;
+  padding:5px;
+}
+.empty{
+  display: none;
+}
+.footer{
+  padding-top:50px;
+  max-height:176px;
+  margin:0;
+}
+.wrapper{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:0;
+  margin:0;
+}
+.menu-main li a{
+  font-size:10px;
+}
+.menu-main li a:hover{
+  font-size: 14px;
+}
+.menu-main li a:after{
+  all:unset;
+}
+.top-menu{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.navbar-logo{
+  position: relative;
+  justify-self: flex-start;
+  align-self: center;
+  height:100%;
+  scale: 0.8;
+  padding:0;
+  margin-bottom:20px;
+}
+.menu-main{
+  display: none;
+}
 }
