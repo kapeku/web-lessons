@@ -9,19 +9,22 @@
 </head>
 <body>
     <wrapper>
-        <header>
-            <div class="top-menu">
-                <a class="navbar-logo" href="#top"><img src="img/logo.svg"></a>
-                <div class="hamburger-menu">
-                    <div class="hamburger"></div>
-                </div>
-                <ul class="menu-main">
-                        <li class="menu_list"><a href="#TheProblem">the problem</a></li>
-                        <li class="menu_list"><a href="#PiedPiperCoin">PiedPiperCoin</a></li>
-                        <li><a href="#TheTeam">the team</a></li>
-                </ul>
+        <div class="top-nav">
+            <div class="logotip">
+              <a class="navbar-logo" href="#top"><img src="img/logo.svg"></a>
             </div>
-        </header>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+              <li><a href="#TheProblem">the problem</a></li>
+              <span>|</span>
+              <li><a href="#PiedPiperCoin">PiedPiperCoin</a></li>
+              <span>|</span>
+              <li><a href="#TheTeam">the team</a></li>
+            </ul>
+        </div>
         <div class="hero1">
             <div class="container PiperNet">
                 <h1 class="heading">PiperNet Is Here</h1>
