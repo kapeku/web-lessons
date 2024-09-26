@@ -118,8 +118,8 @@ transition:.1s;
   }
   .menu {
     position: absolute;
-    top: 0;
-    margin-top: 50px;
+    top:0;
+    margin-top: 80px;
     left: 0;
     flex-direction: column;
     width: 100%;
