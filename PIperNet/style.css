@@ -26,6 +26,7 @@ html{
   padding: 1em;
 }
 .menu li a{
+  display:block;
   text-decoration: none;
   font-style: none;
   font-family: Roboto;
@@ -63,6 +64,7 @@ transition:.1s;
 }
 
 .menu-button-container {
+  
   display: none;
   height: 100%;
   width: 30px;
@@ -111,8 +113,14 @@ transition:.1s;
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
+.top-nav{
+  position: fixed;
+  width:100%;
+}
 @media (max-width: 700px) {
+  .top-nav{
+    width:90%;
+  }
   .menu-button-container {
     display: flex;
   }

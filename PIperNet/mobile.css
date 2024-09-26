@@ -195,7 +195,9 @@ footer{
   padding-top: 50px;
   padding-bottom: 62px; 
 }
-
+.menu li a{
+  display: block;
+}
 .footer p{
   font-family: Roboto;
 font-size: 18px;
