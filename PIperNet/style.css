@@ -454,4 +454,11 @@ body{
 .menu span{
   display:none;
 }
+.top-nav{
+  width: 95%;
 }
+.menu-button-container{
+  margin-right:20px;
+}
+}
+
