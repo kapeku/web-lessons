@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*{
+  padding:0;
+  margin:0;
+}
+.wrapper{
+  scroll-behavior: smooth;
+  max-width: 1219px;
+  padding: 55px;
+}
+.main_block{
+  display: flex;
+  flex-direction: column;
+}
+.problem{
+  width: 100%;
+  
+}
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00BAF0;
+  background: #007765;
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+.menu li a{
+  display:block;
+  text-decoration: none;
+  font-style: none;
+  font-family: Roboto;
+font-size: 24px;
+line-height: 28.13px;
+text-align: center;
+color: #FFFFFF;
+transition:.1s;
+}
+.menu span {
+  font-weight: 500;
+  margin-left:0;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+}
+.menu li a:hover{
+  font-size: 26px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+.top-nav{
+  position: fixed;
+  width:100%;
+}
+@media (max-width: 700px) {
+  .top-nav{
+    width:90%;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top:0;
+    margin-top: 80px;
+    background-color: #007765;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+ 
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+.hero1 {
+  margin:0;
+  background-image: url('img/image.png');
+  background-size: cover;
+  background-position: center center;
+  padding-top:160px;
+  padding-bottom: 160px;
+  max-height: 403px;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  text-align:center;
+  
+}
+.PiperNet h1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  color:#fff;
+}
+.text-desc p{
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 37.5px;
+  color:black;
+}
+.text-desc p:not(:last-child){
+  margin-bottom: 1.5em;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  margin:0;
+}
+.description h1{
+  justify-content: center;
+  align-self: flex-start;
+  font-family: Roboto;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color:#007765;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.side-menu{
+  display: none;
+}
+.hamb{
+  display: none;
+}
+.text-desc{
+  justify-self: center;
+  align-self: center;
+  max-width:1100px ;
+  max-height: 488px;
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  box-sizing: border-box;
+}
+.problem{
+  box-sizing: border-box;
+  margin:auto;
+  padding-top: 48px;
+  padding-bottom: 92px;
+  background-color: #EEEEEE;
+}
+.hero__message {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
+.hero2 {
+  margin:0;
+  background-image: url('img/image2.png');
+  background-size: cover;
+  background-position: center center;
+  padding-top:160px;
+  padding-bottom: 160px;
+  max-height: 483px;
+}
+.Introduction h1{
+  justify-content: center;
+  align-self: flex-start;
+  font-family: Roboto;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color:#007765;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+}
+.logo_PPC{
+  float:left;
+  padding-right:48px;
+}
+.first_p span{
+  font-family: Roboto;
+font-size: 32px;
+font-style: italic;
+line-height: 37.5px;
+text-align: left;
+}
+.Introduction .text-desc{
+  padding-bottom: 92px;
+}
+.team {
+  margin: 0 auto;
+  padding: 48px 0 92px;
+  background-color: #EEEEEE;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  margin: 0 auto 32px auto;
+  max-width: 90%;
+}
+
+.personals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.personal {
+  flex: 0 0 calc(33.333% - 30px);
+  min-width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.name{
+  font-family: Roboto;
+font-size: 24px;
+line-height: 28.13px;
+text-align: left;
+color: #007765;
+font-weight: bold;
+}
+.icon-text{
+  font-family: Roboto;
+font-size: 18px;
+font-style: italic;
+line-height: 21.09px;
+text-align: left;
+}
+.empty{
+  width: 100%;
+}
+footer{
+  width: 100%;
+  max-height:176px;
+  background-color: #333333;
+
+}
+.footer{
+  padding-top: 50px;
+  padding-bottom: 62px; 
+}
+
+.footer p{
+  font-family: Roboto;
+font-size: 18px;
+line-height: 21.09px;
+text-align: center;
+color:#fff;
+margin: auto;
+max-width: 540px;
+max-height: 64px;
+}
+
+
+@media screen and (max-width:700px) {
+.container .PiperNet{
+  text-align: center;
+}
+.Introduction{
+  padding-bottom: 20px;
+}
+.problem .description{
+  margin-bottom: 20px ;
+}
+.top-nav{
+  justify-content: space-between;
+}
+.text-desc p{
+  font-size: 20px;
+  padding: 0 15px;
+}
+.text-desc span{
+  font-size: 20px;
+}
+.problem{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  min-height: auto;
+  max-height: none;
+}
+.problem .text-desc{
+  max-height: none;
+}
+.problem h1{
+  padding-bottom: 20px;
+}
+.hero2 {
+  padding-top:160px;
+  padding-bottom: 160px;
+  max-height: 483px;
+}
+.hero__message{
+  font-size:30px;
+  padding: 0px 15px;
+}
+.container{
+  padding: 0;
+}
+.team h1{
+  font-size: 50px;
+}
+.description h1{
+  font-size: 50px;
+}
+.Introduction{
+  min-height: auto;
+  padding-bottom: 30px; 
+  flex-grow: 1;
+}
+.Introduction .text-desc{
+  max-height: none;
+  padding: 10px;
+}
+.team{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.team h1{
+  padding:0;
+}
+.Introduction .logo_PPC{
+  width: 60px;
+  height: auto;
+  padding:0 10px;
+  margin:0;
+}
+.Introduction h1.heading {
+  font-size: 50px;  /* Уменьшенный размер */
+  line-height: 50px;
+  white-space: normal; /* Текст может переноситься */
+  padding: 20px 15px 0; /* Уменьшенные отступы */
+}
+.personal img{
+  width:140px;
+  height:140px;
+}
+.personal .name{
+  font-size: 20px;
+}
+.personal .icon-text{
+  font-size: 15px;
+}
+.personals{
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap:15px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.personal{
+  max-width: 200px;
+  padding:5px;
+  flex: 0 0 calc(50% - 15px);
+}
+.empty{
+  display: none;
+}
+.footer{
+  padding-top:50px;
+  max-height:176px;
+  margin:0;
+}
+.wrapper{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:0;
+  margin:0;
+}
+.menu span{
+  display:none;
+}
+.top-nav{
+  width: 95%;
+}
+.menu-button-container{
+  margin-right:20px;
+}
+.footer{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .text-desc p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .text-desc span {
+    font-size: 18px;
+  }
+
+  .hero1, .hero2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .PiperNet h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .description h1, .Introduction h1, .team h1 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+
+  .personals {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .personal {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .footer p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .personals{
+    justify-content: space-around;
+  }
+  .personal{
+    padding: 0;
+    margin: 0;
+  }
+  .problem{
+    min-height: auto;
+  }
+  .problem .description .text-desc{
+    max-height: none;
+    padding-bottom:0 ;
+    min-height: auto;
+  }
+  .description .text-desc{
+    margin: 0 20px 150px 20px;
+  }
+  .Introduction{
+    min-height: auto;
+  }
+  .Introduction .text-desc{
+    margin: 0 15px 30px;
+    max-height: none;
+  }
+  .Introduction .heading{
+    font-size: 55px;
+  }
+  .Problem .heading{
+    font-size: 55px;
+  }
+  .Team .heading{
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .description .text-desc{
+    margin: 0 20px;
+  }
+  .Introduction .text-desc{
+    margin: 0 20px;
+  }
+}
